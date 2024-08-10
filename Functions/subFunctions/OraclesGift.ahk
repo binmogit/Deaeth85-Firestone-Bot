@@ -16,7 +16,7 @@ OraclesGift(){
         Sleep, 10000 ; long delay in case 10 or more chests are opened
         BigClose()
         ; failsafe in case big close opens options
-        MouseMove, 59, 181
+        MouseMove, 59, 183
         Sleep, 1000
         Click
         Sleep, 1000
