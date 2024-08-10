@@ -3,6 +3,7 @@
 #Include Functions\subFunctions\BigClose.ahk
 
 Iron(){
+    ControlFocus,, ahk_exe Firestone.exe
     PixelSearch, FoundX, FoundY, 1543, 307, 1887, 905, 0x071250, 3, Fast RGB
     If (ErrorLevel=0){
         MouseMove, FoundX, FoundY
