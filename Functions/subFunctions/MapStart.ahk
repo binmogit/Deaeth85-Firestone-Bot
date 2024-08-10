@@ -22,7 +22,7 @@ MapStart(){
             MapClose()
         }
         ; check for more idle troops
-        PixelSearch, X, Y, 1175, 996, 1187, 1012, 0x542710, 10, Fast RGB
+        PixelSearch, X, Y, 1050, 950, 1187, 1012, 0x542710, 10, Fast RGB
             If(ErrorLevel=0){
                 Continue
             }

@@ -73,7 +73,7 @@ MapRedeem(){
     Troops:
     MsgBox, , Troop Check, Checking for idle troops., 1.5
     ; Check if there are idle troops
-    PixelSearch, X, Y, 1175, 996, 1187, 1012, 0x542710, 10, Fast RGB
+    PixelSearch, X, Y, 1050, 950, 1187, 1012, 0x542710, 10, Fast RGB
         If (ErrorLevel = 0){
             MsgBox, , Troop Check, Idle troops found - starting maps, 1.5
             MapStart()
