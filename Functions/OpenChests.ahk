@@ -56,20 +56,20 @@ OpenChests(){
         Goto, Rare
     }    
     Mythic:
-    MsgBox, , Open Chests, Opening Mythic Chests, 1.5
+    MsgBox, , Open Chests, Opening Mythic Chests, 0.5
     Mythic()
     Legendary:
-    MsgBox, , Open Chests, Opening Legendary Chests, 1.5
+    MsgBox, , Open Chests, Opening Legendary Chests, 0.5
     Legendary()
     Epic:
-    MsgBox, , Open Chests, Opening Epic Chests, 1.5
+    MsgBox, , Open Chests, Opening Epic Chests, 0.5
     Epic()
     Rare:
-    MsgBox, , Open Chests, Opening Rare Chests, 1.5
+    MsgBox, , Open Chests, Opening Rare Chests, 0.5
     Rare()
-    MsgBox, , Open Chests, Opening Uncommon Chests, 1.5
+    MsgBox, , Open Chests, Opening Uncommon Chests, 0.5
     Uncommon()
-    MsgBox, , Open Chests, Opening Common Chests, 1.5
+    MsgBox, , Open Chests, Opening Common Chests, 0.5
     Common()
 
     JewelChests:
@@ -95,27 +95,27 @@ OpenChests(){
         Goto, Opal
     }
     Emerald:
-    MsgBox, , Open Chests, Opening Emerald Chests, 1.5
+    MsgBox, , Open Chests, Opening Emerald Chests, 0.5
     Emerald()
     Opal:
-    MsgBox, , Open Chests, Opening Opal Chests, 1.5
+    MsgBox, , Open Chests, Opening Opal Chests, 0.5
     Opal()
     Diamond:
-    MsgBox, , Open Chests, Opening Diamond Chests, 1.5
+    MsgBox, , Open Chests, Opening Diamond Chests, 0.5
     Diamond()
     Golden:
-    MsgBox, , Open Chests, Opening Golden Chests, 1.5
+    MsgBox, , Open Chests, Opening Golden Chests, 0.5
     Golden()
-    MsgBox, , Open Chests, Opening Iron Chests, 1.5
+    MsgBox, , Open Chests, Opening Iron Chests, 0.5
     Iron()
-    MsgBox, , Open Chests, Opening Wooden Chests, 1.5
+    MsgBox, , Open Chests, Opening Wooden Chests, 0.5
     Wooden()
     
     Gifts:
     ; look for Gifts
-    MsgBox, , Open Chests, Opening Oracle Gifts, 1.5
+    MsgBox, , Open Chests, Opening Oracle Gifts, 0.5
     OraclesGift()
-    MsgBox, , Open Chests, Opening Mystery Boxes, 1.5
+    MsgBox, , Open Chests, Opening Mystery Boxes, 0.5
     MysteryBox()
     
     ;check if Upgrade Blessings is checked
@@ -153,17 +153,17 @@ OpenBlessChests(){
     ; start here if also claiming other chests
     OpenBlessChestsNoBag:
     ; look for blessing chests
-    MsgBox, , Open Chests, Opening Galaxy Chests, 1.5
+    MsgBox, , Open Chests, Opening Galaxy Chests, 0.5
     Galaxy()
-    MsgBox, , Open Chests, Opening Cosmic Chests, 1.5
+    MsgBox, , Open Chests, Opening Cosmic Chests, 0.5
     Cosmic()
-    MsgBox, , Open Chests, Opening Nebula Chests, 1.5
+    MsgBox, , Open Chests, Opening Nebula Chests, 0.5
     Nebula()
-    MsgBox, , Open Chests, Opening Solar Chests, 1.5
+    MsgBox, , Open Chests, Opening Solar Chests, 0.5
     Solar()
-    MsgBox, , Open Chests, Opening Lunar Chests, 1.5
+    MsgBox, , Open Chests, Opening Lunar Chests, 0.5
     Lunar()
-    MsgBox, , Open Chests, Opening Comet Chests, 1.5
+    MsgBox, , Open Chests, Opening Comet Chests, 0.5
     Comet()
     ; close bag
     MouseMove, 1870, 246
