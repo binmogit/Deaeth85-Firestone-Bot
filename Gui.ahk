@@ -2,7 +2,7 @@
 #SingleInstance, Force
 #Include Deaeth85 Firestone Bot.ahk
 
-SendMode, Input
+; SendMode, Input
 SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
