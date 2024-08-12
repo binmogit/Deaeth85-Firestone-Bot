@@ -15,9 +15,9 @@ MainMenu(){
         PixelSearch, X, Y, 1057, 288, 1321, 335, 0x8E4423, 2, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1397, 307
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1500
+            sleep, 500
         }
         BigClose()
         Goto, SettingsFinder

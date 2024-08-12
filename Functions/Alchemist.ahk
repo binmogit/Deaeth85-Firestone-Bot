@@ -7,9 +7,9 @@ Alchemist(){
     ControlFocus,, ahk_exe Firestone.exe
     ; open Alchemist
     MouseMove, 511, 837
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1500
+    sleep, 500
     ; check if blood alchemy isn't running
     PixelSearch, X, Y, 928, 519, 948, 535, 0xFFC700, 3, Fast RGB
         If (ErrorLevel = 0){
@@ -21,7 +21,7 @@ Alchemist(){
                 MouseMove, 949, 777
                 MsgBox, , Alchemy Status, Dragon Blood experiment is complete, 1.5
                 Click
-                Sleep, 1000
+                sleep, 500
             }
         }
     ; check if dust alchemy isn't running
@@ -35,7 +35,7 @@ Alchemist(){
                     MouseMove, 1286, 786
                     MsgBox, , Alchemy Status, Strange Dust experiment is complete, 1.5
                     Click
-                    Sleep, 1000
+                    sleep, 500
                 }
             }
     ; check if exotic coin alchemy isn't running
@@ -49,7 +49,7 @@ Alchemist(){
                 MouseMove, 1632, 772
                 MsgBox, , Alchemy Status, Exotic Coins experiment is complete, 1.5
                 Click
-                Sleep, 1000
+                sleep, 500
             }
         }
     ; check for free to complete alchemy with blood
@@ -58,7 +58,7 @@ Alchemist(){
             MouseMove, 949, 777
             MsgBox, , Alchemy Status, Dragon Blood experiment is free to complete, 1.5
             Click
-            Sleep, 1000
+            sleep, 500
         }
     ; check for free to complete alchemy with dust
     PixelSearch, x, y, 1336, 748, 1386, 789, 0xF9AA47, 3, Fast RGB
@@ -66,7 +66,7 @@ Alchemist(){
             MouseMove, 1286, 786
             MsgBox, , Alchemy Status, Strange Dust experiment is free to complete, 1.5
             Click
-            Sleep, 1000
+            sleep, 500
         }
     ; check for free to complete alchemy with exotic coins
     PixelSearch, X, Y, 1679, 748, 1735, 796, 0xF9AA47, 3, Fast RGB
@@ -74,7 +74,7 @@ Alchemist(){
             MouseMove, 1632, 772
             MsgBox, , Alchemy Status, Exotic Coins experiment is free to complete, 1.5
             Click
-            Sleep, 1000
+            sleep, 500
         }
     ; check for in-process alchemy with blood
     PixelSearch, X, Y, 1007, 735, 1030, 766, 0x916A38, 3, Fast RGB
@@ -85,7 +85,7 @@ Alchemist(){
             MouseMove, 951, 771
             MsgBox, , Alchemy Status, Starting Dragon Blood experiment, 1.5
             Click
-            Sleep, 1000
+            sleep, 500
             Goto, DustSearch
         }
     DustSearch:
@@ -103,7 +103,7 @@ Alchemist(){
                     MouseMove, 1286, 786
                     MsgBox, , Alchemy Status, Starting Strange Dust experiment, 1.5
                     Click
-                    Sleep, 1000
+                    sleep, 500
                     Goto, ExoticCheck
                 }
         }
@@ -121,7 +121,7 @@ Alchemist(){
                     MouseMove, 1641, 767
                     MsgBox, , Alchemy Status, Starting Exotic Coins experiment, 1.5
                     Click
-                    Sleep, 1000
+                    sleep, 500
                     Goto, FinishAlch
                 }
             }

@@ -3,9 +3,9 @@
 BPOnly(){
     ; Open Blueprint tab
     MouseMove, 1486, 170
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
 
     ; Check upgrade options
     GuiControlGet, SelectedItem, ,Blueprints
@@ -42,25 +42,25 @@ BPOnly(){
         PixelSearch, X, Y, 1171, 594, 1225, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1108, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         ; upgrade health
         PixelSearch, X, Y, 1477, 597, 1536, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1413, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         ; upgrade armor
         PixelSearch, X, Y, 1786, 596, 1844, 642, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1726, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 
@@ -69,9 +69,9 @@ BPOnly(){
         PixelSearch, X, Y, 1171, 594, 1225, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1108, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 
@@ -80,9 +80,9 @@ BPOnly(){
         PixelSearch, X, Y, 1477, 597, 1536, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1413, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 
@@ -91,9 +91,9 @@ BPOnly(){
         PixelSearch, X, Y, 1786, 596, 1844, 642, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1726, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 
@@ -102,17 +102,17 @@ BPOnly(){
         PixelSearch, X, Y, 1171, 594, 1225, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1108, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         ; upgrade health
         PixelSearch, X, Y, 1477, 597, 1536, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1413, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 
@@ -121,17 +121,17 @@ BPOnly(){
         PixelSearch, X, Y, 1171, 594, 1225, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1108, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         ; upgrade armor
         PixelSearch, X, Y, 1786, 596, 1844, 642, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1726, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 
@@ -140,17 +140,17 @@ BPOnly(){
         PixelSearch, X, Y, 1477, 597, 1536, 644, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1413, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         ; upgrade armor
         PixelSearch, X, Y, 1786, 596, 1844, 642, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, 1726, 600
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         Return
 }

@@ -8,7 +8,7 @@ CraftArtifact(){
         MouseMove, 227, 507
         MsgBox, , Craft Artifact, Crafting an Artifact, 1.5
         Click
-        Sleep, 10000
+        sleep, 5000
         BigClose()
     }
 }

@@ -26,14 +26,14 @@
 OpenChests(){
     ; open bag
     MouseMove, 1581, 939
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     ; click chests tab
     MouseMove, 1487, 460
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     ; looks for Gear Chests
     GuiControlGet, SelectedItem, ,GearChestExclude,
     If (SelectedItem="Exclude All"){
@@ -128,9 +128,9 @@ OpenChests(){
 
     ;close bag
     MouseMove, 1870, 246
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1500
+    sleep, 500
     Return
 }
 
@@ -142,14 +142,14 @@ OpenBlessChests(){
     }
     ; open bag
     MouseMove, 1581, 939
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     ; click chests tab
     MouseMove, 1487, 460
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     ; start here if also claiming other chests
     OpenBlessChestsNoBag:
     ; look for blessing chests
@@ -167,8 +167,8 @@ OpenBlessChests(){
     Comet()
     ; close bag
     MouseMove, 1870, 246
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     Return
 }

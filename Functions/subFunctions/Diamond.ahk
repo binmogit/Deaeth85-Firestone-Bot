@@ -6,24 +6,24 @@ Diamond(){
     PixelSearch, FoundX, FoundY, 1543, 307, 1887, 905, 0xF60151, 1, Fast RGB
     If (ErrorLevel=0){
         MouseMove, FoundX, FoundY
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         ; click 1
         MouseMove, 914, 812
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 10000 ; long delay in case 10 or more chests are opened
+        sleep, 5000 ; long delay in case 10 or more chests are opened
         ; clicks equip or space it should be
         MouseMove, 962, 850
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         BigClose()
         ; failsafe in case big close opens options
         MouseMove, 59, 183
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
     }
 }

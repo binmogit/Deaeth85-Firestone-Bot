@@ -34,21 +34,21 @@ UseToken(){
     }
     If (UseThree = 1){
         MouseMove, 1188, 959
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
     } Else {
         If (UseTwo = 1){
             MouseMove, 1082, 957
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         } Else {
             If (UseOne = 1){
                 MouseMove, 962, 958
-                Sleep, 1000
+                sleep, 500
                 Click
-                Sleep, 1000
+                sleep, 500
             } Else {
                 Return
             }
@@ -65,15 +65,15 @@ UseToken(){
     ; Get the random location
     RandomX := XCoords[RandomIndex]
     RandomY := YCoords[RandomIndex]
-    Sleep, 1000
+    sleep, 500
     MouseMove, %RandomX%, %RandomY%
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
 
     ; random click in case get game tokens was clicked
     MouseMove, 1257, 49
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
 }

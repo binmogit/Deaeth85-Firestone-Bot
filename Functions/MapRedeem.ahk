@@ -14,7 +14,7 @@ MapRedeem(){
         MouseMove, 173, 918
         MsgBox, , Mission Restart, WOOHOO! FREE BUTTON!, 1.5
         Click
-        Sleep, 1000
+        sleep, 500
     }
     Checks:
     ; check for active missions and their progress
@@ -32,18 +32,18 @@ MapRedeem(){
         MouseMove, 162, 334
         MsgBox, , Mission Check, Mission is already complete!, 1.5
         Click
-        Sleep, 1000
+        sleep, 500
         MouseMove, 971, 628
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         Goto, Checks
     }
     ; look for greater than 3 minutes left
     MouseMove, 162, 334
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     PixelSearch, X, Y, 1427, 730, 1481, 762, 0x916A38, 0, Fast RGB
     If (ErrorLevel = 0){
         MsgBox, , Mission Check, Mission has more than 3 minutes reamining, 1.5
@@ -56,11 +56,11 @@ MapRedeem(){
             MouseMove, 1365, 758
             MsgBox, , Mission Check, Mission can be completed early for free, 1.5
             Click
-            Sleep, 1000
+            sleep, 500
             MouseMove, 971, 628
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             Goto, Checks
         }
     }

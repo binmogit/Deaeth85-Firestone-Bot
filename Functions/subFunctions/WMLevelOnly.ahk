@@ -5,13 +5,13 @@ LevelOnly(){
     If (ErrorLevel = 0){
         ; open anvil tab
         MouseMove, 1337, 170
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         ; click upgrade
         MouseMove, 1428, 581
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
     }
 }

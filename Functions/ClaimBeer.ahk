@@ -13,20 +13,20 @@ ClaimBeer(){
             ControlFocus,, ahk_exe Firestone.exe
             ; open Tavern
             MouseMove, 719, 957
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1500
+            sleep, 500
             ; check for enough beer to claim tokens
             MouseMove, 1735, 69
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             PixelSearch, X, Y, 616, 610, 697, 656, 0x659BB0, 3, Fast RGB
             If (ErrorLevel = 0){
                 MouseMove, 544, 630
-                Sleep, 1000
+                sleep, 500
                 Click
-                Sleep, 1000
+                sleep, 500
             }
             BigClose()
             ; check if Use Tavern Token is checked

@@ -6,7 +6,7 @@ RAST(){
     ; check for status of slot 2
     MsgBox, , Slot 2 Status ,Checking status of slot 2..., 1.5
     MouseMove, 1202, 944
-    Sleep, 1000
+    sleep, 500
     Click
     Sleep, 500
     PixelSearch, X, Y, 562, 245, 754, 311, 0x8C4221, 10, Fast RGB
@@ -26,7 +26,7 @@ RAST(){
         ; check for status of slot 1
         MsgBox, , Slot 1 Status, Checking status of slot 1... , 1.5
         MouseMove, 554, 939
-        Sleep, 1000
+        sleep, 500
         Click
         Sleep, 500
         PixelSearch, X, Y, 562, 245, 754, 311, 0x8C4221, 10, Fast RGB

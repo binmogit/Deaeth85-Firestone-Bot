@@ -8,38 +8,38 @@ ClaimEvents(){
     If (ErrorLevel = 0){
         ; open events
         MouseMove, 1691, 229
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         ; click top event
         MouseMove, 942, 359
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         ; click challenges
         MouseMove, 1125, 70
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         ; claim 3 challenges
         PixelSearch, X, Y, 1540, 365, 1568, 405, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
         MouseMove, 1483, 382
-        Sleep, 1000
+        sleep, 500
         Click
         Sleep, 500
         }
         PixelSearch, X, Y, 1538, 592, 1566, 633, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
         MouseMove, 1496, 604
-        Sleep, 1000
+        sleep, 500
         Click
         Sleep, 500
         }
         PixelSearch, X, Y, 1530, 823, 1568, 870, 0x0AA008, 3, Fast RGB
         If (ErrorLevel = 0){
         MouseMove, 1500, 837
-        Sleep, 1000
+        sleep, 500
         Click
         Sleep, 500
         }

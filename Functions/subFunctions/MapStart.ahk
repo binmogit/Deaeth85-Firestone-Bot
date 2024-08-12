@@ -6,11 +6,24 @@
 ;function to start the map missions, should be all nodes + the gift missions for the world domination mini-event
 ;because map is different on the larger screen this array is more for 1366x768
 MapStart(){
-    Point := {430:217,500:370,614:465,668:425,653:532,908:479,875:365,994:290,1047:190,937:307,932:552,764:615,748:555,560:355,522:272:658:267,620:183,381:135,570:443,620:383,688:381,735:371,951:451,866:223}
-    For x,y in Point{
+    ;reset map view
+    ControlFocus,, ahk_exe Firestone.exe
+    sleep 500
+    MouseClick, left, 200, 150, , , D
+    sleep 500
+    MouseClick, left, 1370, 720, , 10, U
+    sleep 500
+    MouseClick, left, 200, 150, , , D
+    sleep 500
+    MouseClick, left, 1370, 720, , 10, U
+    sleep 500
+    MouseClick, left, 1370, 720, , , D
+    sleep 500
+    MouseClick, left, 685, 123, , 10, U
+    Point := {289:223,450:150,475:255,560:155,530:250,595:240,600:410,720:375,975:175,680:525,750:670,835:470,435:395,625:145,625:365,745:300,800:200,915:235,875:365,750:415,620:150}
         ControlFocus,, ahk_exe Firestone.exe
         Click %x%, %y%
-        Sleep, 1000
+        sleep, 500
         ; check if mission can be started
         PixelSearch, X, Y, 953, 822, 1205, 898, 0x0AA008, 10, Fast RGB
         If(ErrorLevel=0){

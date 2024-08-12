@@ -5,8 +5,8 @@
 ResearchClicks(){
     ; start or safely click away from spend gems
     MouseMove, 721, 747
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1000
+    sleep, 500
     ResearchSlotTest()
 }

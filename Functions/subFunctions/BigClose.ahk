@@ -3,8 +3,8 @@
 ;function to close menus
 BigClose(){
     MouseMove, 1851, 84
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1500
+    sleep, 500
     Return
 }

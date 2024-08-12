@@ -11,14 +11,14 @@ GoResearch() {
     ControlFocus,, ahk_exe Firestone.exe
     ; open Library
     MouseMove, 329, 657
-    Sleep, 1000
+    sleep, 500
     click
-    sleep, 1000
+    sleep, 500
     ; select Firestone tree
     MouseMove, 1809, 975
-    Sleep, 1000
+    sleep, 500
     click
-    Sleep, 1000
+    sleep, 500
     ResearchSlotTest()
     If (Slot1InProcess = 0){
         ResearchStart()

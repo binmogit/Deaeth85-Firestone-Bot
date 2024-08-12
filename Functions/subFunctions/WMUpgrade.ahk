@@ -90,9 +90,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0xA49789, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -118,9 +118,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0xF7661c, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -145,9 +145,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x740D0B, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -172,9 +172,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x3B4F98, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -199,9 +199,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0xEA4019, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -226,9 +226,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x275094, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -253,9 +253,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x702815, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -280,9 +280,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x010BAF, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -307,9 +307,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x6CB932, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -334,9 +334,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x971DAB, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -361,9 +361,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0xC2EFD9, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -388,9 +388,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x226B10, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){
@@ -415,9 +415,9 @@ WMUpgrade(){
         PixelSearch, FoundX, FoundY, 248, 894, 1878, 1020, 0x3EE0EE, 3, Fast RGB
         If (ErrorLevel = 0){
             MouseMove, FoundX, FoundY
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
         }
         GuiControlGet, SelectedItem, ,WMOptions,
         If (SelectedItem = "Level Only"){

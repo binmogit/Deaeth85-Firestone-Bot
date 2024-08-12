@@ -6,19 +6,19 @@ OraclesGift(){
     PixelSearch, FoundX, FoundY, 1543, 307, 1887, 905, 0x00EAF6, 5, Fast RGB
     If (ErrorLevel=0){
         MouseMove, FoundX, FoundY
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         ; click 1
         MouseMove, 904, 724
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 10000 ; long delay in case 10 or more chests are opened
+        sleep, 5000 ; long delay in case 10 or more chests are opened
         BigClose()
         ; failsafe in case big close opens options
         MouseMove, 59, 183
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
     }
 }

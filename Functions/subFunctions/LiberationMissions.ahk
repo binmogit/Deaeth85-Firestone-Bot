@@ -9,17 +9,17 @@ LiberationMissions(){
     PixelSearch, X, Y, 1873, 920, 1900, 954, 0xF40000, 3, Fast RGB
     If (ErrorLevel = 0){
     MouseMove, 1800, 982
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1500
+    sleep, 500
     } Else {
         Return
     }
     ; open Liberation
     MouseMove, 697, 788
-    Sleep, 1000
+    sleep, 500
     Click
-    Sleep, 1500
+    sleep, 500
     Loop, 60{
         Send, {WheelDown}
         Sleep, 200
@@ -76,9 +76,9 @@ LiberationMissions(){
     190Stars:
     {
         MouseMove, 1581, 759
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 155Stars
@@ -91,9 +91,9 @@ LiberationMissions(){
     155Stars:
     {
         MouseMove, 1193, 767
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 110Stars
@@ -106,9 +106,9 @@ LiberationMissions(){
     110Stars:
     {
         MouseMove, 797, 759
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 80Stars
@@ -121,9 +121,9 @@ LiberationMissions(){
     80Stars:
     {
         MouseMove, 412, 748
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 60Stars
@@ -136,9 +136,9 @@ LiberationMissions(){
     60Stars:
     {
         MouseMove, 137, 742
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 40Stars
@@ -155,9 +155,9 @@ LiberationMissions(){
             Sleep, 200
         }
         MouseMove, 1505, 758
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 20Stars
@@ -170,9 +170,9 @@ LiberationMissions(){
     20Stars:
     {
         MouseMove, 1115, 755
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 10Stars
@@ -185,9 +185,9 @@ LiberationMissions(){
     10Stars:
     {
         MouseMove, 713, 753
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 5Stars
@@ -200,9 +200,9 @@ LiberationMissions(){
     5Stars:
     {
         MouseMove, 331, 758
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 BigClose()
@@ -246,9 +246,9 @@ LiberationMissions(){
     {
         ; open dungeon
         MouseMove, 1223, 794
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
     }
     GuiControlGet, SelectedItem, ,LiberationStars,
         If (SelectedItem="190+ Stars"){
@@ -277,9 +277,9 @@ LiberationMissions(){
     120Stars:
     {
         MouseMove, 1149, 763
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Goto, 70Stars
@@ -292,9 +292,9 @@ LiberationMissions(){
     70Stars:
     {
         MouseMove, 768, 762
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         PixelSearch, X, Y, 1723, 51, 1797, 123, 0xFF4805, 10, Fast RGB
             If (ErrorLevel=0){
                 Return

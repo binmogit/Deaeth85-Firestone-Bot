@@ -22,7 +22,7 @@ ResearchSlotTest() {
         MouseMove, 1204, 938
         MsgBox, , Slot 2 Status, Slot 2 is able to be completed for free., 1.5
         Click
-        Sleep, 1000
+        sleep, 500
         Slot2InProcess := 0
         Goto, Slot1Check
     }
@@ -31,9 +31,9 @@ ResearchSlotTest() {
     If (ErrorLevel = 0){
         MsgBox, , Slot 2 Status, Slot 2 is completed and ready to claim., 1.5
         MouseMove, 1204, 938
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         Slot2InProcess := 0
         Goto, Slot1Check
     }
@@ -56,7 +56,7 @@ ResearchSlotTest() {
         MouseMove, 545, 940
         MsgBox, , Slot 1 Status, Slot 1 is able to be completed for free., 1.5
         Click
-        Sleep, 1000
+        sleep, 500
         Slot1InProcess := 0
         If (Slot2InProcess = 1){
             Slot1InProcess := 1
@@ -70,9 +70,9 @@ ResearchSlotTest() {
     If (ErrorLevel = 0){
         MsgBox, , Slot 1 Status, Slot 1 is completed and ready to claim., 1.5
         MouseMove, 545, 940
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1000
+        sleep, 500
         Slot1InProcess := 0
         If (Slot2InProcess = 1){
             Slot1InProcess := 1

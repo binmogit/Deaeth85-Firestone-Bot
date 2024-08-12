@@ -9,33 +9,33 @@ UpgradeTalents450(){
     PixelSearch, FoundX, FoundY, 27, 278, 78, 336, 0x60A00, 1, Fast RGB
     If (ErrorLevel = 0){
         MouseMove, FoundX, FoundY
-        Sleep, 1000
+        sleep, 500
         Click
-        Sleep, 1500
+        sleep, 500
         UpgradeTalents450()
         } Else {
             PixelSearch, FoundX, FoundY, 30, 372, 84, 428, 0x600A00, 1, Fast RGB
             If (ErrorLevel = 0){
                 MouseMove, FoundX, FoundY
-                Sleep, 1000
+                sleep, 500
                 Click
-                Sleep, 1500
+                sleep, 500
                 UpgradeTalents450()
             } Else {
                 PixelSearch, FoundX, FoundY, 32, 469, 84, 520, 0x600A00, 1, Fast RGB
                 If (ErrorLevel = 0){
                     MouseMove, FoundX, FoundY
-                    Sleep, 1000
+                    sleep, 500
                     Click
-                    Sleep, 1500
+                    sleep, 500
                     UpgradeTalents450()
                 } Else {
                     PixelSearch, FoundX, FoundY, 31, 560, 84, 612, 0x600A00, 1, Fast RGB
                     If (ErrorLevel = 0){
                         MouseMove, FoundX, FoundY
-                        Sleep, 1000
+                        sleep, 500
                         Click
-                        Sleep, 1500
+                        sleep, 500
                         UpgradeTalents450()
                     } Else {
                         Return
@@ -50,7 +50,7 @@ UpgradeTalents450(){
         Send, {WheelUp}
         Sleep, 100
     }
-    Sleep, 1000
+    sleep, 500
     ; check first dropdown selection
     GuiControlGet, SelectedItem, , Talents450,
        If (SelectedItem = "Don't Upgrade Talents (0-450 Talent Points)"){
@@ -273,96 +273,96 @@ UpgradeTalents450(){
         AllMain1:
             ; click talent
             MouseMove, 961, 318
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
         Lead3:
             MouseMove, 646, 584
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
         
         Guard3:
             MouseMove, 960, 580
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
     
         Team3:
             MouseMove, 1279, 585
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
         
         LeadAA10:
             MouseMove, 961, 549
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -372,20 +372,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 643, 902
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -395,20 +395,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 963, 883
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -418,20 +418,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1271, 889
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -441,20 +441,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 961, 894
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -464,20 +464,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 804, 878
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -487,20 +487,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1113, 872
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -510,20 +510,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 646, 875
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
             
@@ -533,20 +533,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 963, 871
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -556,20 +556,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1276, 884
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -579,20 +579,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 806, 888
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -602,20 +602,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1118, 888
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -625,20 +625,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 806, 891
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -648,20 +648,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1117, 897
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -671,20 +671,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 960, 870 
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -694,20 +694,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 808, 874
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -717,20 +717,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1118, 877
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -740,20 +740,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 964, 885
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -763,20 +763,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 807, 894
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -786,20 +786,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1121, 897
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -809,20 +809,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 965, 875
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -832,20 +832,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 799, 870
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -855,20 +855,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1122, 881
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -878,20 +878,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 803, 885
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -901,20 +901,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1130, 893
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -924,20 +924,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 968, 900
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -947,20 +947,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 802, 897
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -970,20 +970,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1123, 907
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -993,20 +993,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 963, 922
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1016,20 +1016,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 659, 887
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1039,20 +1039,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 965, 883
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1062,20 +1062,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1286, 893
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1085,20 +1085,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 967, 897
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1108,20 +1108,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 813, 900
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1131,20 +1131,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1132, 905
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1154,20 +1154,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 964, 879
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1177,20 +1177,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 813, 883
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
 
@@ -1200,20 +1200,20 @@ UpgradeTalents450(){
                 Sleep, 100
             }
             MouseMove, 1125, 883
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             ; click + to upgrade
             MouseMove, 1021, 836
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             ; click to save
             MouseMove, 1543, 927
-            Sleep, 1000
+            sleep, 500
             Click
-            Sleep, 1000
+            sleep, 500
             BigClose()
             Return
     }
