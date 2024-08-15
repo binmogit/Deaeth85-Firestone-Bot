@@ -33,14 +33,6 @@ Guardian(){
         click
         sleep, 500
     }
-    ; spend
-    PixelSearch, X, Y, (1525/1920)*1366, (766/1080)*768, (1550/1920)*1366, (810/1080)*768, 0x0AA008, 3, Fast RGB
-    If (ErrorLevel = 0){
-        MouseMove, (1525/1920)*1366, (766/1080)*768
-        Sleep, 500
-        Click
-        Sleep, 500
-    }
     BigClose()
     Return
 }
