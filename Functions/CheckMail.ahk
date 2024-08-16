@@ -23,6 +23,7 @@ CheckMail(){
         sleep, 500
     }
     ; delete mail if any there
+    /*
     PixelSearch, X, Y, 1533, 904, 1601, 969, 0xE9554E, 3, Fast RGB
     If (ErrorLevel = 0){
         MouseMove, 1569, 939
@@ -30,5 +31,6 @@ CheckMail(){
         Click
         sleep, 500
     }
+    */
     BigClose()
 }
