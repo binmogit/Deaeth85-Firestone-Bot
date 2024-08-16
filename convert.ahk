@@ -1,12 +1,35 @@
+; Initialize progress variables
+totalFiles := 0
+processedFiles := 0
+
+; Count total files in the directory and subdirectories
+Loop, Files, %A_ScriptDir%\*.ahk
+{
+    totalFiles++
+}
+Loop, Files, %A_ScriptDir%\Functions\*.ahk, R
+{
+    totalFiles++
+}
+
+; Create the GUI for progress tracking
+Gui, Add, Text, x10 y10 w430 h50 vProgressText, Processing Files...
+Gui, Add, Progress, x10 y60 w300 h20 vProgressBar
+Gui, Show, w450 h100, Progress
+
 ; Loop through all .ahk files in the same directory as the script
 Loop, Files, %A_ScriptDir%\*.ahk
 {
+    processedFiles++
+    ProgressTracker(A_LoopFileFullPath, processedFiles, totalFiles)
     ProcessFile(A_LoopFileFullPath)
 }
 
 ; Loop through all .ahk files in the Functions folder and its subfolders
 Loop, Files, %A_ScriptDir%\Functions\*.ahk, R
 {
+    processedFiles++
+    ProgressTracker(A_LoopFileFullPath, processedFiles, totalFiles)
     ProcessFile(A_LoopFileFullPath)
 }
 
@@ -41,3 +64,14 @@ ProcessFile(filePath)
     ; Replace the original file with the modified content
     FileMove, %tempFile%, %filePath%, 1
 }
+
+ProgressTracker(filePath, processedFiles, totalFiles)
+{
+    ; Update progress
+    percentage := Round((processedFiles / totalFiles) * 100)
+    GuiControl,, ProgressText, Processing file: %filePath%`nProgress: %processedFiles% / %totalFiles%
+    GuiControl,, ProgressBar, %percentage%
+}
+
+; Close the GUI when done
+Gui, Destroy
