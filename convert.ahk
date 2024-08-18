@@ -33,37 +33,33 @@ ProcessFile(filePath)
 
     Loop, Read, %filePath%
     {
-        if InStr(A_LoopReadLine, "MouseMove")
+        newLine := A_LoopReadLine
+
+        if InStr(newLine, "MouseMove")
         {
             ; Check if the line contains specific variables %x% and %y%
-            if InStr(A_LoopReadLine, "MouseMove, %x%, %y%")
+            if InStr(newLine, "MouseMove, %x%, %y%")
             {
                 ; Do nothing for this specific case
-                newLine := A_LoopReadLine
             }
-            else if InStr(A_LoopReadLine, "%")
+            else if InStr(newLine, "%")
             {
                 ; Adjust the line for random variables
-                newLine := RegExReplace(A_LoopReadLine, "MouseMove,\s*%(\w+)%\s*,\s*%(\w+)%", "MouseMove, % ($1 / 1920) * 1366, % ($2 / 1080) * 768")
+                newLine := RegExReplace(newLine, "MouseMove,\s*%(\w+)%\s*,\s*%(\w+)%", "MouseMove, % ($1 / 1920) * 1366, % ($2 / 1080) * 768")
             }
             else
             {
                 ; Adjust the line for numeric values
-                newLine := RegExReplace(A_LoopReadLine, "MouseMove,\s*(\d+),\s*(\d+)", "MouseMove, ($1/1920)*1366, ($2/1080)*768")
+                newLine := RegExReplace(newLine, "MouseMove,\s*(\d+),\s*(\d+)", "MouseMove, ($1/1920)*1366, ($2/1080)*768")
             }
-
-            FileAppend, %newLine%`n, %tempFile%
         }
-        else if RegExMatch(A_LoopReadLine, "(?!\[.*?)(\d+),\s*(\d+),\s*(\d+),\s*(\d+)(?!.*?\])", match)
+        else if RegExMatch(newLine, "(?!\[.*?)(\d+),\s*(\d+),\s*(\d+),\s*(\d+)(?!.*?\])", match)
         {
             ; Replace only the matched sequence of numbers
-            newLine := RegExReplace(A_LoopReadLine, "(?!\[.*?)(\d+),\s*(\d+),\s*(\d+),\s*(\d+)(?!.*?\])", "($1/1920)*1366, ($2/1080)*768, ($3/1920)*1366, ($4/1080)*768")
-            FileAppend, %newLine%`n, %tempFile%
+            newLine := RegExReplace(newLine, "(?!\[.*?)(\d+),\s*(\d+),\s*(\d+),\s*(\d+)(?!.*?\])", "($1/1920)*1366, ($2/1080)*768, ($3/1920)*1366, ($4/1080)*768")
         }
-        else
-        {
-            FileAppend, %A_LoopReadLine%`n, %tempFile%
-        }
+
+        FileAppend, %newLine%`n, %tempFile%
     }
 
     ; Replace the original file with the modified content
