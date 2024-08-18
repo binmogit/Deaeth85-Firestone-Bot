@@ -16,7 +16,7 @@ HeroUpgrade(){
     MaxHeroLoops := 3 ; Number of iterations to check before stopping
     Loop
     {
-        MsgBox, , Hero Upgrades, Upgrading heros loop %unavailableCount% , 2
+        MsgBox, , Hero Upgrades, Upgrading heros loop %HeroLoops% , 2
 
         ; check special upgrade
         PixelSearch, X, Y, 1874, 207, 1889, 249, 0x0AA008, 3, Fast RGB

@@ -3,7 +3,7 @@
 #Include Functions\subFunctions\BigClose.ahk
 
 Epic(){
-    PixelSearch, FoundX, FoundY, 1543, 307, 1887, 905, 0xB48AFF, 3, Fast RGB
+    PixelSearch, FoundX, FoundY, 1543, 307, 1887, 905, 0xB98FFF, 3, Fast RGB
     If (ErrorLevel=0){
         MouseMove, FoundX, FoundY
         sleep, 500
