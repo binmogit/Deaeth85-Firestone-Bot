@@ -12,16 +12,10 @@ Loop, Files, %A_ScriptDir%\Functions\*.ahk, R
     totalFiles++
 }
 
-; Create the GUI for progress tracking
-Gui, Add, Text, x10 y10 w430 h50 vProgressText, Processing Files...
-Gui, Add, Progress, x10 y60 w300 h20 vProgressBar
-Gui, Show, w450 h100, Progress
-
 ; Loop through all .ahk files in the same directory as the script
 Loop, Files, %A_ScriptDir%\*.ahk
 {
     processedFiles++
-    ProgressTracker(A_LoopFileFullPath, processedFiles, totalFiles)
     ProcessFile(A_LoopFileFullPath)
 }
 
@@ -29,7 +23,6 @@ Loop, Files, %A_ScriptDir%\*.ahk
 Loop, Files, %A_ScriptDir%\Functions\*.ahk, R
 {
     processedFiles++
-    ProgressTracker(A_LoopFileFullPath, processedFiles, totalFiles)
     ProcessFile(A_LoopFileFullPath)
 }
 
@@ -42,10 +35,22 @@ ProcessFile(filePath)
     {
         if InStr(A_LoopReadLine, "MouseMove")
         {
-            ; Updated regex to match numbers within MouseMove with or without spaces after the comma
-            newLine := RegExReplace(A_LoopReadLine, "MouseMove,\s*(\d+),\s*(\d+)", "MouseMove, ($1/1920)*1366, ($2/1080)*768")
-            ; Check for random variables and adjust them
-            newLine := RegExReplace(newLine, "MouseMove,\s*%(\w+)%\s*,\s*%(\w+)%", "MouseMove, % ($1 / 1920) * 1366, % ($2 / 1080) * 768")
+            ; Check if the line contains specific variables %x% and %y%
+            if InStr(A_LoopReadLine, "MouseMove, %x%, %y%")
+            {
+                ; Do nothing for this specific case
+                newLine := A_LoopReadLine
+            }
+            else if InStr(A_LoopReadLine, "%")
+            {
+                ; Adjust the line for random variables
+                newLine := RegExReplace(A_LoopReadLine, "MouseMove,\s*%(\w+)%\s*,\s*%(\w+)%", "MouseMove, % ($1 / 1920) * 1366, % ($2 / 1080) * 768")
+            }
+            else
+            {
+                ; Adjust the line for numeric values
+                newLine := RegExReplace(A_LoopReadLine, "MouseMove,\s*(\d+),\s*(\d+)", "MouseMove, ($1/1920)*1366, ($2/1080)*768")
+            }
 
             FileAppend, %newLine%`n, %tempFile%
         }
@@ -64,14 +69,3 @@ ProcessFile(filePath)
     ; Replace the original file with the modified content
     FileMove, %tempFile%, %filePath%, 1
 }
-
-ProgressTracker(filePath, processedFiles, totalFiles)
-{
-    ; Update progress
-    percentage := Round((processedFiles / totalFiles) * 100)
-    GuiControl,, ProgressText, Processing file: %filePath%`nProgress: %processedFiles% / %totalFiles%
-    GuiControl,, ProgressBar, %percentage%
-}
-
-; Close the GUI when done
-Gui, Destroy
