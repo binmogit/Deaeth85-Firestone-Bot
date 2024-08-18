@@ -69,7 +69,7 @@ UseToken(){
     MouseMove, %RandomX%, %RandomY%
     sleep, 500
     Click
-    sleep, 500
+    sleep, 1100
 
     ; random click in case get game tokens was clicked
     MouseMove, 1257, 49
